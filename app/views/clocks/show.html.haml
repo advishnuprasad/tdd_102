@@ -1,0 +1,4 @@
+- @utc[:mins].to_s.length == 1 ? zero_mins = "0" : zero_mins = ""
+- @utc[:secs].to_s.length == 1 ? zero_secs = "0" : zero_secs = ""
+%p= "Universal Time " + "#{@utc[:hours]}" + ":" +zero_mins+ "#{@utc[:mins]}" + ":" + zero_secs+"#{@utc[:secs]}" 
+%p= @clock.country + "Time : " + "#{@local_time[:hours]}" + ":" + "#{@local_time[:mins].round}" + ":" + "#{@local_time[:secs]}" 

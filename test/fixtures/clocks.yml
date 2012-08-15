@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  country: MyString
+  time: 9.99
+  timezone: 9.99
+
+two:
+  country: MyString
+  time: 9.99
+  timezone: 9.99

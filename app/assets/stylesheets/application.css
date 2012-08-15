@@ -1,0 +1,40 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+.calc_form input {
+  font-size: 25px;
+}
+
+.calc_form select{
+  font-size: 25px;
+}
+
+.calc_form input[type="text"] {
+  width: 200px;
+  border: 2px solid #CCC;
+}
+
+.calc_result, .calc_form{
+  padding: 50px 0px 0px 100px;
+}
+
+.calc_result button{
+  font-size: 25px;
+}
+
+.smiley_block{
+  margin: 20px 100px;
+  padding: 8px;
+  border: 4px solid #006700;
+}

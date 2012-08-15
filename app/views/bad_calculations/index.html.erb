@@ -1,0 +1,11 @@
+<div class="calc_form">
+<h1> Calculator for 2 integers </h1>
+<h3>Well, it can add, subtract and multiply!</h3>
+
+<%= form_tag("/bad_calculate", :method => "post") do %>
+  <%= text_field_tag(:a) %> &nbsp;
+  <%= select_tag(:op_id, options_for_select([[' + ', '1'], [' - ', '2'], [' x ', '3']]) ) %>
+  <%= text_field_tag(:b) %>
+  <%= submit_tag("Calculate") %>
+<% end %>
+</div>

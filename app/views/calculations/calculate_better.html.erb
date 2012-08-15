@@ -1,0 +1,26 @@
+
+<div class="calc_result">
+  <h1> The result is : <span><%= @result %></span></h1>
+  <%= link_to  calculations_path do %>
+    <button><%= "&larr; Calculate Again".html_safe %></button>
+  <% end %>
+</div>
+
+
+<% if @result > 0 %>
+<div class="smiley_block">
+  <% @result.to_i.times do%>
+    <span><%= image_tag "smiley.png" %></span>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+<!--<%= render "smileys" %> -->
+<% end %>

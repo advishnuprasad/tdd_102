@@ -1,0 +1,9 @@
+%p Available Clocks
+%ul
+  - @all_clocks.each do |c|
+    %li
+      = link_to c.country , clock_path(c) 
+      = link_to "Edit" , edit_clock_path(c)
+      = link_to "Delete" , clock_path(c) , :method => 'delete'
+
+=link_to "Create New Clock" , new_clock_path

@@ -1,0 +1,12 @@
+%h2= 'ADD Clock'
+
+= form_tag("/clocks", :method => "post") do
+  = label_tag(:country, "Clock Name")
+  = text_field_tag(:country)
+  = label_tag(:timezone, "Time Zone")
+  = text_field_tag(:timezone)
+  = submit_tag("Store")
+%br
+%br
+
+=link_to "Go Home" , clocks_path
