@@ -34,6 +34,8 @@ class ClocksController < ApplicationController
     @clock = Clock.find(params[:id])
     if @clock.update_attributes(params[:clock])
       redirect_to clocks_path
+    else
+      redirect_to edit_clock_path(@clock)
     end
   end
 
